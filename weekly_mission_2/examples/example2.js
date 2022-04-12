@@ -5,3 +5,13 @@ const myObjetc2 = {
 };
 console.log("Ejemplo 2: Crear un objeto con propiedades");
 console.log(myObjetc2);
+
+//EJERCICIO PROPIO
+
+let futbol = {
+  equipo: "barcelona",
+  jugador: "Rafa marquez",
+  numero: 4,
+  Pais: "mexico",
+};
+console.log(futbol);

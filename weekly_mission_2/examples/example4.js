@@ -10,3 +10,16 @@ const pet = {
 
 console.log("Ejemplo 4: Objeto con métodos");
 pet.sayHello();
+
+//EJERCICIO PROPIO-OBJETO
+
+const f1 = {
+  escuderia: "Red Bull",
+  piloto: "Max Verstappen",
+  race: function () {
+    console.log(
+      `el piloto de ${this.escuderia} ${this.piloto} ganara el gran premio de mexico `
+    );
+  },
+};
+f1.race();
