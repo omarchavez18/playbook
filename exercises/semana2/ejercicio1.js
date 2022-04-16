@@ -78,3 +78,37 @@ const pullRequest = {
 };
 console.log(pullRequest.getStatus());
 console.log(pullRequest.getTitleAndAuthor());
+
+//FACEBOOK
+
+const facebook = {
+  user: { userName: "Omar", lastName: "chavez", age: 27 },
+  country: "México",
+  friends: 356,
+  lastSearch: "formula1",
+  getLastSearch() {
+    return `the last search was ${this.lastSearch}.`;
+  },
+  getlastNameAndFriends() {
+    return `the users name is ${this.user.userName} and he had ${this.friends} friends.`;
+  },
+};
+console.log(facebook.getLastSearch());
+console.log(facebook.getlastNameAndFriends());
+
+//UBER
+
+const uber = {
+  profile: { name: "Enzo", nickName: "papito" },
+  lastTravel: "plaza mayor",
+  newTravel: "Altacia",
+  price: "$85",
+  getNickName() {
+    return `the users nickname is ${this.profile.nickName}.`;
+  },
+  getPrice() {
+    return `the price of the new travel is ${this.price} pesos.`;
+  },
+};
+console.log(uber.getNickName());
+console.log(uber.getPrice());
