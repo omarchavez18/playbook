@@ -86,7 +86,7 @@ const CDMX = explorers.find((mexico) => {});
 //7)Obtén la validación si al menos uno de los explorers tiene la propiedad exercisesFinished en frontend como true, usa SOME
 
 const finished = explorers.some((lista) => {
-  return lista.exercisesFinished === true;
+  return lista.exercisesFinished === false;
 });
 console.log(finished);
 
