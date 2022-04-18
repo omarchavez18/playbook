@@ -46,6 +46,9 @@ class student {
     this.companyTarget = companyTarget;
     this.school = school;
   }
+  sayHello() {
+    return `Hey! Hello! ${this.name}`;
+  }
 }
 
 const mexicanStudent = new student(
@@ -55,6 +58,7 @@ const mexicanStudent = new student(
   "wizeline"
 );
 
-console.log(mexicanStudent);
+console.log(mexicanStudent.degree);
+console.log(mexicanStudent.sayHello());
 
 console.log(woopa_obj_js);
