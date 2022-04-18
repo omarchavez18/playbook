@@ -1,7 +1,13 @@
-//POO
+//
+/*1) como crear una clase
+2) como instanciar un objeto de una clase
+3) instanciar varios objetos de una misma clase
+4) como agregar el contructor para guardar atributos
+5) crear metodos  */
 
 //objeto de JS
 
+// se creo objeto
 const woopa_obj = {
   name: "woopa",
   mission: "nodeJS",
@@ -12,6 +18,7 @@ const woopa_obj = {
 //CREAR UNA  CLASE
 
 class ajolonauta {
+  //agregar constructor para agregar atributos
   constructor(name, mission, age, color) {
     this.name = name;
     this.mission = mission;
@@ -23,6 +30,7 @@ class ajolonauta {
 console.log(ajolonauta);
 
 //Instanciar es crear un objeto a partir de una clase
+// instanciar varios objetos de uan misma clase
 
 const woopa = new ajolonauta("woopa", "java", 17, "white");
 const woopy = new ajolonauta("woopy", "nodejs", 18, "blue");
@@ -46,6 +54,7 @@ class student {
     this.companyTarget = companyTarget;
     this.school = school;
   }
+  //crear metodos
   sayHello() {
     return `Hey! Hello! ${this.name}`;
   }
