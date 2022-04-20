@@ -10,5 +10,5 @@ test("1) Create a new object pokemon pikachu", () => {
 test("2) create a new object pokemon", () => {
   const anotherPokemon = new Pokemon("bulbasaur", "grass");
   expect(anotherPokemon.name).toBe("bulbasaur");
-  expect(anotherPokemon.type).toBe("grassa");
+  expect(anotherPokemon.type).toBe("grass");
 });
