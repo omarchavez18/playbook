@@ -1,7 +1,7 @@
 const spiderMan = require("../app/spiderman");
 
 describe("Unit test for spiderman class", () => {
-  test("create an spiderman object", () => {
+  test("1) create an spiderman object", () => {
     const peterParker = new spiderMan(
       "original spiderman",
       38,
@@ -14,5 +14,9 @@ describe("Unit test for spiderman class", () => {
     expect(peterParker.actor).toBe("Tobey Maguire");
     expect(peterParker.moviesNumber).toBe(3);
     expect(peterParker.studio).toBe("sony studio");
+  });
+  test("2) Use the method getInfo()", () => {
+    const tobey = new spiderMan("peter", 40, "tobey", 4, "sony");
+    expect(tobey.getInfo()).toBe("Hey Im tobey from sony");
   });
 });
