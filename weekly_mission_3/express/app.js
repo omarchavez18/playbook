@@ -24,6 +24,14 @@ app.get("/node", (req, res) => {
   res.send([explorer1, explorer2, explorer3]);
 });
 
+/*localhost:3000/explorers/explorer // como aqui abajo al momento de escribir la url
+en el navegador se cambia el ultimo explorer por algun nombre y ese sera el parametro a
+tomar para mostrar el objeto  */
+app.get("/explorers/:explorer", (req, res) => {
+  console.log(req.params); //{explorer:"omar"}
+  res.send(req.params);
+});
+
 app.listen(port, () => {
   console.log("server listo!!");
 });
