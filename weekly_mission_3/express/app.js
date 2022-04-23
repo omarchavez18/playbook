@@ -20,8 +20,8 @@ app.get("/launchx", (req, res) => {
 app.get("/node", (req, res) => {
   const explorer1 = { id: 18, name: "OmarChavez", empresa: "EPAM" };
   const explorer2 = { id: 20, name: "DiegoHernandez", empresa: "EPAM" };
-  const explorer3 = { id: 22, name: "PierreBarba", empresa: "wizeline" };
-  res.send([explorer1, explorer2, explorer3]);
+
+  res.send([explorer1, explorer2]);
 });
 
 /*localhost:3000/explorers/explorer // como aqui abajo al momento de escribir la url
