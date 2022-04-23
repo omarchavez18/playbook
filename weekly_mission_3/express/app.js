@@ -15,6 +15,15 @@ app.get("/launchx", (req, res) => {
   res.send("Bienvenidos a launchX");
 });
 
+//localhost:3000/node
+//req = request  res= response
+app.get("/node", (req, res) => {
+  const explorer1 = { id: 18, name: "OmarChavez", empresa: "EPAM" };
+  const explorer2 = { id: 20, name: "DiegoHernandez", empresa: "EPAM" };
+  const explorer3 = { id: 22, name: "PierreBarba", empresa: "wizeline" };
+  res.send([explorer1, explorer2, explorer3]);
+});
+
 app.listen(port, () => {
   console.log("server listo!!");
 });
