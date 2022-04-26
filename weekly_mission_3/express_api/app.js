@@ -37,6 +37,21 @@ app.post("/v1/explorers", (req, res) => {
   res.status(201).json({ message: "creado exitosamente" });
 });
 
+app.put("/v1/explorers/:id", (req, res) => {
+  console.log(`PUT explorers V1 API ${new Date()}`);
+  //Agregar la logica para persistir;
+  console.log(req.body); // parametros a actualizar
+  console.log(req.params.id); //query params
+
+  res.status(200).json({ message: "Actualizado exitosamente" });
+});
+
+app.delete("/v1/explorers/:id", (req, res) => {
+  console.log(`DELETE explorers V1 API ${new Date()}`);
+  //Agregar la logica para eliminar el registro enviado
+  res.status(200).json({ message: "Borrado exitosamente" });
+});
+
 //asi inicializamos la app
 app.listen(port, () => {
   console.log(`example app listening on port ${port}`);
